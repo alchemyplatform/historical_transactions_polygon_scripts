@@ -56,9 +56,9 @@ Putting together this information, we can now use Alchemy’s Composer tool to r
 
 ## To use this starter script, insert your Alchemy Key for API access:
 
-If you don’t already have one, you’ll first need to create an account on Alchemy. The free version will work fine for getting started!
+>If you don’t already have one, you’ll first need to create an account on Alchemy. The free version will work fine for getting started!
 
-Replace the string “ALCHEMY KEY” with your own private API key in `main.py`. 
+>Replace the string “ALCHEMY KEY” with your own private API key in `main.py`. 
 
 ```
 ALCHEMY_KEY = “ALCHEMY KEY”
