@@ -6,7 +6,7 @@ While building historical queries into dApps has traditionally been complicated 
 
 In this tutorial, we’ll look at an example of how, with just a few lines of code, your Polygon dApp can integrate historical transactions. 
 
-Understanding Alchemy Transfers API on Polygon
+## Understanding Alchemy Transfers API on Polygon
 
-In this example, we are trying to query and find the transfer of this transaction. We can see from Polyscan that ~12,000 USDT was transferred from 0x5350e1068f0e138ff306990b16fa4910d970c692 to 0x9d2b758e3ffd2569c6956676fae7f8b71a53ffb5 .
+In this example, we are trying to query and find the transfer of [this transaction](https://polygonscan.com/tx/0x1e85ace98f4fc4ad7b1b64465df81d0a275d494421e553e23a238b156f42b17f). We can see from Polyscan that ~12,000 USDT was transferred from [0x5350e1068f0e138ff306990b16fa4910d970c692](https://polygonscan.com/token/0xc2132d05d31c914a87c6611c10748aeb04b58e8f?a=0x5350e1068f0e138ff306990b16fa4910d970c692) to [0x9d2b758e3ffd2569c6956676fae7f8b71a53ffb5](https://www.google.com/url?q=https://polygonscan.com/token/0xc2132d05d31c914a87c6611c10748aeb04b58e8f?a%3D0x9d2b758e3ffd2569c6956676fae7f8b71a53ffb5&sa=D&source=docs&ust=1643161531590007&usg=AOvVaw3vJ842uYyQ1Hqqjsp03eXy).
 
