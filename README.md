@@ -58,9 +58,14 @@ Putting together this information, we can now use Alchemy’s Composer tool to r
 
 If you don’t already have one, you’ll first need to create an account on Alchemy. The free version will work fine for getting started!
 
-Replace the string “ALCHEMY KEY” with your own private API key in . 
+Replace the string “ALCHEMY KEY” with your own private API key in `main.py`. 
 
+```
 ALCHEMY_KEY = “ALCHEMY KEY”
 w3 = Web3(Web3.HTTPProvider('https://polygon-mainnet.alchemyapi.io/v2/'+ALCHEMY_KEY))
+```
 
+Run the `main.py` python script and confirm that your command line output returns the following:
+
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
 
