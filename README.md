@@ -67,5 +67,5 @@ w3 = Web3(Web3.HTTPProvider('https://polygon-mainnet.alchemyapi.io/v2/'+ALCHEMY_
 
 Run the `main.py` python script and confirm that your command line output returns the following:
 
-![command_line_output](https://postimg.cc/bDx9ZxNk)
+![command_line_output](https://i.postimg.cc/76csQ9Fs/Screen-Shot-2022-01-25-at-5-02-15-PM.png)
 
