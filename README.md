@@ -12,6 +12,7 @@ In this example, we are trying to query and find the transfer of [this transacti
 
 To use the Transfers API to track the USDT transfer, we need a few pieces of key information that help narrow down our search. We format this request information into a JSON object as follows:
 
+```
 {
    "jsonrpc":"2.0",
    "id":0,
@@ -31,8 +32,9 @@ To use the Transfers API to track the USDT transfer, we need a few pieces of key
       }
    ]
 })
+```
 
-1. From Block & To Block
+## 1. From Block & To Block
 
 We can reduce the amount of time it takes for the API to return our JSON response by constraining the start and end block numbers that we are attempting to search. 
 
@@ -40,20 +42,16 @@ Our transaction takes place in block 23876472 so we adjust our search to a small
 
 The JSON object allows us to either use a hexadecimal string or for block number inputs. In this case, we use hexadecimals, so we input 0x16C5376 for a fromBlock of 23876470 and 0x16C537A for a toBlock of 23876474)
 
-2. To & From Addresses 
+## 2. To & From Addresses 
 
 The To & From addresses represent where the transaction was sent and where it originated from respectively. 
 
 In our example, To Address is 0x9d2b758e3ffd2569c6956676fae7f8b71a53ffb5 and From Address is 0x5350e1068f0e138ff306990b16fa4910d970c692.
 
-3. Contract Address
+## 3. Contract Address
 
-The contract address is the address denoting the specific ERC20, ERC721, or ERC1155 contract that we seek to find.
+The contract address is the address denoting the specific ERC20, ERC721, or ERC1155 contract that we seek to find.  In our example, the ERC20 contract for Polygon USDT is 0xc2132d05d31c914a87c6611c10748aeb04b58e8f. 
 
-In our example, the ERC20 contract for Polygon USDT is 0xc2132d05d31c914a87c6611c10748aeb04b58e8f. 
-
-Putting together this information, we can now use Alchemy’s Composer tool to return results that include our target transaction. 
-
-Visit this Alchemy Composer Example!
+Putting together this information, we can now use Alchemy’s Composer tool to return results that include our target transaction. Visit this Alchemy Composer Example!
 
 
