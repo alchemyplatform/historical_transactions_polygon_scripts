@@ -54,7 +54,7 @@ The contract address is the address denoting the specific ERC20, ERC721, or ERC1
 
 ## To use this starter script, insert your Alchemy Key for API access:
 
->If you don’t already have one, you’ll first need to create an account on Alchemy. The free version will work fine for getting started!
+>If you don’t already have one, you’ll first need to [create an account on Alchemy](https://alchemy.com/?a=fffe47f17e). The free version will work fine for getting started!
 
 Replace the string “ALCHEMY KEY” with your own private API key in `main.py`. 
 
