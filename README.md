@@ -40,7 +40,7 @@ We can reduce the amount of time it takes for the API to return our JSON respons
 
 Our transaction takes place in block 23876472 so we adjust our search to a small buffer around this block number. 
 
-The JSON object allows us to either use a hexadecimal string or for block number inputs. In this case, we use hexadecimals, so we input 0x16C5376 for a `fromBlock` of 23876470 and 0x16C537A for a `toBlock` of 23876474)
+The JSON object allows us to either use a hexadecimal string or for block number inputs. In this case, we use hexadecimals, so we input *0x16C5376* for a `fromBlock` of 23876470 and *0x16C537A* for a `toBlock` of 23876474)
 
 ## 2. To & From Addresses 
 
@@ -53,5 +53,14 @@ In our example, To Address is 0x9d2b758e3ffd2569c6956676fae7f8b71a53ffb5 and Fro
 The contract address is the address denoting the specific ERC20, ERC721, or ERC1155 contract that we seek to find.  In our example, the ERC20 contract for Polygon USDT is 0xc2132d05d31c914a87c6611c10748aeb04b58e8f. 
 
 Putting together this information, we can now use Alchemy’s Composer tool to return results that include our target transaction. [Visit this Alchemy Composer Example!](https://composer.alchemyapi.io?composer_state=%7B%22chain%22%3A2%2C%22network%22%3A401%2C%22methodName%22%3A%22alchemy_getAssetTransfers%22%2C%22paramValues%22%3A%5B%7B%22excludeZeroValue%22%3Atrue%2C%22fromBlock%22%3A%220x16C5376%22%2C%22toAddress%22%3A%220x9d2b758e3ffd2569c6956676fae7f8b71a53ffb5%22%2C%22contractAddresses%22%3A%22%5B%5C%220xc2132d05d31c914a87c6611c10748aeb04b58e8f%5C%22%5D%22%2C%22fromAddress%22%3A%220x5350e1068f0e138ff306990b16fa4910d970c692%22%2C%22category%22%3A%5B%22erc20%22%5D%2C%22toBlock%22%3A%220x16C537A%22%7D%5D%7D)
+
+## To use this starter script, insert your Alchemy Key for API access:
+
+If you don’t already have one, you’ll first need to create an account on Alchemy. The free version will work fine for getting started!
+
+Replace the string “ALCHEMY KEY” with your own private API key in . 
+
+ALCHEMY_KEY = “ALCHEMY KEY”
+w3 = Web3(Web3.HTTPProvider('https://polygon-mainnet.alchemyapi.io/v2/'+ALCHEMY_KEY))
 
 
